@@ -14,5 +14,21 @@
 
 
 <ion-content padding>
+	<h1>{{title}}</h1>
+	<ion-list>
 
+		<ion-item *ngFor="let item of items">
+			<ion-label fixed></ion-label>
+			<ion-input type="text" value="{{item.region}}"></ion-input>
+		</ion-item>
+
+	</ion-list>
+
+	<button ion-button icon-only round color="dark" (click)="addLocationField()">
+		<ion-icon name="add-circle"></ion-icon>
+	</button>
+
+	<button ion-button icon-only round (click)="displayActivitiesSector()">
+		<ion-icon name="arrow-round-forward"></ion-icon>
+	</button>
 </ion-content>
