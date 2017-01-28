@@ -1,3 +1,17 @@
-page-pseudo {
+page-pseudo .back-button.show-back-button {
+	display: none;
+}
 
+page-pseudo img {
+	display: block;
+	margin: auto;
+	border-radius: 50em;
+	width: 10em
+}
+
+page-pseudo button.button-md, page-pseudo button.button-ios, page-pseudo button.button-wp {
+	margin: auto;
+	margin-top: 1em;
+	display: block;
+	width: 10em
 }
