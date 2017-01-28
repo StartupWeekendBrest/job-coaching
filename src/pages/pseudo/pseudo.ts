@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TaskPage } from '../task/task';
 
 /*
   Generated class for the Pseudo page.
@@ -17,6 +18,11 @@ export class PseudoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PseudoPage');
+  }
+
+  goToTask() {
+	  console.log(42)
+	  this.navCtrl.push(TaskPage)
   }
 
 }

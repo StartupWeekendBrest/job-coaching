@@ -19,7 +19,7 @@
 		<ion-label floating>Pseudonyme</ion-label>
 		<ion-input type="text" value="Chaton ingénu"></ion-input>
 	</ion-item>
-	<button ion-button icon-right round [navPush]="secteurPage">
+	<button ion-button icon-right round (click)="goToTask()">
 		Connexion <ion-icon name="log-in"></ion-icon>
 	</button>
 </ion-content>
