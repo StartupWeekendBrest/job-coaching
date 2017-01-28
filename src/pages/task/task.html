@@ -7,12 +7,76 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>task</ion-title>
+    <ion-title>Job-Coaching</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-10>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-col>
+
+      <ion-card>
+        <ion-card-content>
+          {{tasks[0].content}}
+        </ion-card-content>
+      </ion-card>
+      <ion-col width-10>
+        <ion-icon name="calendar" isActive="true"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-10>
+        <ion-checkbox color="dark" checked="false"></ion-checkbox>
+      </ion-col>
+
+      <ion-card>
+        <ion-card-content>
+          {{tasks[1].content}}
+        </ion-card-content>
+      </ion-card>
+      <ion-col width-10>
+        <ion-icon name="calendar" isActive="false"></ion-icon>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-10>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-col>
+
+      <ion-card>
+        <ion-card-content>
+          {{tasks[2].content}}
+        </ion-card-content>
+      </ion-card>
+      <ion-col width-10>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-10>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-col>
+
+      <ion-card>
+        <ion-card-content>
+          {{tasks[3].content}}
+        </ion-card-content>
+      </ion-card>
+      <ion-col width-10>
+        <ion-icon name="calendar" isActive="false"></ion-icon>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
 
 </ion-content>

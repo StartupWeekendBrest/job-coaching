@@ -15,7 +15,7 @@ import { TaskPage } from '../pages/task/task';
     LoginPage,
     SecteurPage,
     PseudoPage,
-    TaskPage
+    TaskPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +27,7 @@ import { TaskPage } from '../pages/task/task';
     LoginPage,
     SecteurPage,
     PseudoPage,
-    TaskPage
+    TaskPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
