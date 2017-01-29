@@ -7,12 +7,30 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>task</ion-title>
+    <ion-title>Job-Coaching</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row *ngFor="let task of tasks">
+      <ion-col width-10>
+        <ion-checkbox checked="{{task.checked}}"></ion-checkbox>
+      </ion-col>
+
+      <ion-card>
+        <ion-card-content>
+          {{task.content}}
+        </ion-card-content>
+        <ion-badge *ngIf="task.interested > 0">{{task.interested}}</ion-badge>
+      </ion-card>
+      <ion-col width-10>
+        <ion-icon name="calendar" isActive="{{task.subscribed}}" *ngIf="task.hasEvent"></ion-icon>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
 
 </ion-content>
