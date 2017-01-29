@@ -31,7 +31,7 @@ export class SecteurPage {
 
 	displayActivitiesSector() {
 		if(this.step == 0) {
-			this.title = "Secteur(s) d'activitée(s)"
+			this.title = "Secteur(s) d'activité(s)"
 			this.items.length = 0
 			this.items.push({region: "Communication"})
 			this.step = 1

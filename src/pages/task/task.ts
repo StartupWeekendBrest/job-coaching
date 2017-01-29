@@ -18,7 +18,7 @@ export class TaskPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.tasks = [
       { checked: true, content: "Atelier de simulation d’entretien", date: "le 4/01/2017, de 16h à 18h", place: "au K2, 3 rue de la boetie à Brest", hasEvent: true, subscribed: true, interested: 4 },
-      { checked: false, content: "Atelier pour affuter sa candidature", date: "le 9/01, de 10h à 12h", place: "à la maison des associations à Brest", hasEvent: true, subscribed: false, interested: 12 },
+      { checked: false, content: "Atelier pour affûter sa candidature", date: "le 9/01, de 10h à 12h", place: "à la maison des associations à Brest", hasEvent: true, subscribed: false, interested: 12 },
       { checked: false, content: "Participer au programme\"Un outil de recherche par jour\"", date: "sur un mois", place: "http://www.unoutilderechercheparjour.com/", hasEvent: true, subscribed: false, interested: 42 },
       { checked: true, content: "Créer un profil LinkedIn", date: "", place: "", hasEvent: false, subscribed: false, interested: -1}
     ];
