@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
-import { TaskPage } from '../pages/task/task';
 import { LoginPage } from '../pages/login/login';
 
 

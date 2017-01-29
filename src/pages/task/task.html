@@ -25,11 +25,13 @@
           {{task.content}}
         </ion-card-content>
         <ion-badge *ngIf="task.interested > 0">
-			{{task.interested}} <ion-icon name="people"></ion-icon>
-		</ion-badge>
+          {{task.interested}}
+          <ion-icon name="people"></ion-icon>
+        </ion-badge>
       </ion-card>
       <ion-col width-10>
-        <ion-icon name="calendar" [color]="task.subscribed ? 'primary' : 'secondary'" isActive="{{task.subscribed}}" *ngIf="task.hasEvent"></ion-icon>
+        <ion-icon name="calendar" [color]="task.subscribed ? 'primary' : 'secondary'" isActive="{{task.subscribed}}" *ngIf="task.hasEvent">
+        </ion-icon>
       </ion-col>
     </ion-row>
 
