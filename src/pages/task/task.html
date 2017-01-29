@@ -17,7 +17,7 @@
   <ion-grid>
     <ion-row *ngFor="let task of tasks">
       <ion-col width-10>
-        <ion-checkbox checked="{{task.checked}}"></ion-checkbox>
+        <ion-checkbox color='primary' checked="{{task.checked}}"></ion-checkbox>
       </ion-col>
 
       <ion-card>
@@ -29,7 +29,7 @@
 		</ion-badge>
       </ion-card>
       <ion-col width-10>
-        <ion-icon name="calendar" isActive="{{task.subscribed}}" *ngIf="task.hasEvent"></ion-icon>
+        <ion-icon name="calendar" [color]="task.subscribed ? 'primary' : 'secondary'" isActive="{{task.subscribed}}" *ngIf="task.hasEvent"></ion-icon>
       </ion-col>
     </ion-row>
 
